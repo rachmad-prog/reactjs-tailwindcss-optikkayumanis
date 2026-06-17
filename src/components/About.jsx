@@ -8,11 +8,13 @@ export default function About() {
           <h2 className="text-3xl font-bold text-emerald-800">
             Tentang Optik Kayumanis
           </h2>
-          <p className="text-gray-700 leading-relaxed">
+          {/* PERBAIKAN: Menghapus 'justify-between' yang salah tempat di tag p */}
+          <p className="text-gray-700 leading-relaxed text-justify">
             Optik Kayumanis adalah optik resmi berizin yang telah berdiri sejak
-            tahun **2002**. Kami didukung penuh oleh tenaga kesehatan
-            profesional bernama **Optometris** yang memiliki Surat Izin Praktek
-            resmi dari Dinas Kesehatan.
+            tahun <b className="underline">2002</b>. Kami didukung penuh oleh
+            tenaga kesehatan profesional bernama{" "}
+            <b className="underline">Optometris</b> yang memiliki Surat Izin
+            Praktek resmi dari Dinas Kesehatan.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Dalam menjalankan pelayanan, kami berkomitmen memegang teguh nilai
@@ -30,15 +32,19 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="bg-gradient-to-br from-emerald-100 to-emerald-800 h-64 md:h-80 rounded-2xl shadow-inner flex items-center justify-center text-emerald-800 p-8 text-center border border-emerald-200">
-          <div>
-            <p className="text-2xl font-serif italic mb-2">
-              "Kesehatan mata Anda adalah prioritas kami sejak 2002."
-            </p>
-            <span className="text-sm font-semibold tracking-wider block mt-4">
-              - Tim Optometris Kayumanis
-            </span>
-          </div>
+
+        {/* SISI KANAN: PLAYER VIDEO YOUTUBE EMBED */}
+        <div className="w-full aspect-video md:aspect-square xl:max-h-[450px] relative rounded-2xl overflow-hidden shadow-xl border border-emerald-100 bg-emerald-950">
+          <iframe
+            className="w-full h-full object-cover"
+            /* PERBAIKAN URL: Mengubah /watch?v= menjadi /embed/ 
+              Ditambahkan ?autoplay=1&mute=1&loop=1&playlist=0_GNZk-iZJA agar otomatis berputar, tanpa suara, dan mengulang terus.
+            */
+            src="https://www.youtube.com/embed/0_GNZk-iZJA?autoplay=1&mute=1&loop=1&playlist=0_GNZk-iZJA"
+            title="Tentang Optik Kayumanis"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen></iframe>
         </div>
       </div>
     </section>
