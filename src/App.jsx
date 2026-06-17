@@ -8,6 +8,8 @@ import Services from "./components/Services";
 import Branches from "./components/Branches";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import HelpWidget from "./components/HelpWidget";
+import Partners from "./components/Partners";
 
 function App() {
   return (
@@ -27,7 +29,10 @@ function App() {
       <Services />
       <Branches />
       <Contact />
+      {/* <Partners /> */}
 
+      {/* popup */}
+      <HelpWidget />
       {/* Bagian Bawah / Footer */}
       <Footer />
     </div>
