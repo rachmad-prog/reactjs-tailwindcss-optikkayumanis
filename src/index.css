@@ -5,3 +5,20 @@
     font-family: "Poppins", sans-serif;
   }
 }
+
+@import "tailwindcss";
+
+@theme {
+  /* Daftarkan animasi marquee */
+  --animate-marquee: marquee 25s linear infinite;
+
+  /* Atur gerakan keyframes */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
