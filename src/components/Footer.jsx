@@ -58,7 +58,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-6xl mx-auto pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
-        &copy; {new Date().getFullYear()} Optik Kayumanis. All Rights Reserved.
+        &copy; {new Date().getFullYear()} Optik Kayumanis. All Rights Reserved. by Rachmadinata, S.Kom
       </div>
     </footer>
   );
